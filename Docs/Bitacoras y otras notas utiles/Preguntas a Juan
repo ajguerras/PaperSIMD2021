@@ -1,0 +1,11 @@
+source /opt/intel/bin/compilervars.sh intel64
+
+
+Hacer el lector multifasta. Con el lector de referencias que ya esta.
+		Lector Multifasta version eficiente, es decir, primero una que abra el fasta y lo limpie, conociendo ademas la totalidad de elementos. Luego otra qu esolo lo lea para ganar eficiente.
+
+
+Juan hay q poner rden en en el codigo versiones y archivos definitivos
+
+
+

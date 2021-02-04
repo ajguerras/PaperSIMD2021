@@ -1,0 +1,45 @@
+Pruebas a mil millones, solo se crea y se destruye debe estar lo mas cercano de los 4 GB
+
+REAL: 3.72 GB
+
+I. Clark. NUNCA CONSEGUIMOS Q GENERARA RESULTADOS
+
+	export PATH=$path_to_memusg
+	export PATH=~/Desktop/Versiones\ Terminadas/AnalisisMemoria/memusgClark/
+	
+	
+
+
+	memusg my_command
+
+	memusg ./RadixIntOMP 1000000000
+	 /usr/bin/python memusg ./RadixIntOMP 1000000000
+
+
+	Example: memusg sleep 2
+
+II. Shin (3815)... GANADOR ABSOLUTO
+	Cambiar el usuario , los megabytes (50) y el nombre del proceso requerido (nombre de ejecutable)
+	Poner a correr el script bash ./memusg.sh 1 5 clean jdavidq RadixIntOMP
+	
+	Poner a correr el ejecutable en cuestion.
+	Hay que tener cuidado sobre todo con el tema de clean para que no borre lo anterior entonces ir manualmente renombrado la carpeta memusug.
+	La primera linea del archivo es la memoria pico en MB.
+	
+
+	bash ./memusg.sh 1 15 clean jdavidq RadixIntOMP (nombre usuario, nombre programa)
+
+
+III.Syrup (3910472) Very different
+
+	Instalarlo estrictamente usandpo pyton 3
+
+	 syrupy.py ./RadixIntOMP 1000000000
+	 syrupy.py ./TestMEmory 1000000000 
+
+
+
+Seleccionado y por que 
+
+facil de interpretar
+Exacto

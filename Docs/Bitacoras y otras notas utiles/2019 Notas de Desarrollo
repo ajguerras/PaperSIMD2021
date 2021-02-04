@@ -1,0 +1,209 @@
+source /opt/intel/bin/compilervars.sh intel64
+
+
+export KMP_AFFINITY=compact, verbose
+amplxe-gui
+Dataset de Prueba: Hg19 segun MPEG.
+
+
+Util Anibal
+	(LISTO / FALLIDO) Probar pop count intel. Insttruccion no disponible.
+	Eliminar calculo escalar al maximo y las estructuras condicionales. Antes del while, con un simple swap pointer. 
+	(4 horas)Separar las versiones de la primera iteracion de las restantes. con pointer SWAP y padding en la entrada FORZADO.
+	(1 dia )Packing : . Repasar el concepto e implicaciones del packing
+	( LISTO pero por DECIDIR ) 	Comparacion de recalculo versus almacenamiento del VLI VPU.
+
+	FUTURE: hacer estudio detallado por cada estructura de datos como son los accesos (secuenciales vs esparcidos)	 para realizar 
+		replanteamiento del problema, o abordar ganacias y factibilidad del paralelismo de grupos.. 
+
+	TODAS LAS FUNCIONES Trababajan en intervalo Cerrado, abierto. Pero el arreglo de frontera trabaja en intervalo abierto CERRADO.
+	Debe cuidarse efectos del elemento mas alto o FAKE VALUE. 
+
+	Full profile
+
+	Quitar inicialiaciones innecesarias
+
+	
+	que cuando se lance la ejecucion del secuencial , no se retorne el resultado hasta que termine todo el metodo  y por ende TODO ESE TROZO de HU debe tener 1.
+
+	
+	Optimizacion del GroupBuilder por grupo, y luego por OMP o solo directo cuando llegue paralelismo de nivel medio
+
+	TENER CUIDADO CON EL VALOR DE HIGHEST CHAR 0 vs 255
+
+	Optimizar y ajustar a cada grupo la dimesión del New Sorted Array y del Outchar del SVC.
+	
+	El arreglo de HU puede ser solo uint8t
+
+	New sorted arr pudiera ser pequeño, para cada grupo en particular.  ya que solo interesa ordenar este grup olocalmente y lo imporante es colocar en la posicion exacta. Ver posScat
+	
+	Desarrollar y separar los ordenamientos de la primera iteracion de las demas
+
+	General : cuidar si se hce el PACKING, se considere la cantidad de pasadas necesarias para qu eel metodo pueda funcionar correctamente
+
+	Tener versiones separadas, del primer Ordenamiento y el resto de los ordenamientos. (para evitar los gather /Scatter en Histograma Y Partial Radix)
+
+
+	HAY Q BUSCAR ALTERNATIVAS AL NEGATIVO DE FRONTERA; es demasiado el costo. y por que en ese caso no veo que se use para acceder a esta ed el arreglo de indices. 
+
+	PACKING: Groupbulier por grupo (1), paralelo (2) y eliminad el ID
+	
+	Al secuencial se le debe meter el insertsort
+		DEBE APLICARSE PARA ORDENAR DOS A 4 ELEMENTOS CADA VEZ. PARA ESTO SE DEBE CUidaR EL TAMAÑO DE LAS CuBETAS Y QUE JAMAS SE ASuMA que solo son elmenetos de 256. Ademas de los FAKE VALUES
+
+	SelectValidChar
+
+	SVC debe arrojar el resultado en una sola estructura de datos donde se pueda totalizar el resultado de todos los grupos, una estructura compartida (en lugar de varias individuales).
+	Esto porqu een el group builder deb eestar una sola totalizada. Pero qu ees actualizada por segmentos.
+	Ser muy cuidadossos con posible sefectos colaterales del group builder.
+	El trabajar con una misma estructura por segmentos pero que tiene un uso global es ineficiente porque forza procesamiento secuencial de aalgunos elementos.
+
+	Quitar : if (ChunkSize<MRL) Fin =0;		cuando y ase garantice qu esolo se procesaran grups mayores que 1496
+
+
+	Terminar de montar script para pruebas autmatizadas organizadito
+
+	Repartir los grupos en conjuntos multiplos de 16.
+
+	Eliminar el maximo numero de ifs
+
+	hacer una prueba de histograma luego del Radix Parcial.
+
+	hacer mas legible el codigo creando registros adicionales, puede soportar hasta 32 el avx 512
+	ARreglar los tipos de fronter int64_t
+
+
+	Importante, en el histograma y partial radix, y quien sabe donde mas colocar el igual en el menor igual del ciclo for paralelo, y puede que hasta el edel iterativo
+
+	Determinar de manera eacta cual version es mejor entre la naive y la opt.
+	Generar version pulida y funcional de SIMD ONLy
+	Arreglar problemita al liberar la memoria del insersort
+
+	Considerar sobre el tamaño de las pruebas : 
+
+	Tenemos 5 estructuras auxiliares, adicionales al input original, input expandido, y los sufijos. Esto quiere decir que son 8 mega estructuras de igual tamaño al de la entrada. Esto debe cuidarse y tenerse en mente para pruebas con mas de 4 mil millones de elementos
+
+	reemplazar 256 por 255
+	Aplicar siempre programa de correctitud de juan.
+
+	Diferencia entre PartialRadix y PartialRadix2:
+
+	     for (uint32_t x=0; x<sizeInArr;x+=16){ 
+
+
+	//PartialRadix
+		data = _mm512_load_epi32 ((void*) (InputArr+x)) ;
+
+		//  .. Otras operaciones
+		Suff = _mm512_load_epi32 ((void*) (SortedInd+x)) ;               //Indexes to sort
+
+	//PartialRadix2
+
+		Suff = _mm512_load_epi32 ((void*) (SortedInd+x)) ;               //Indexes to sort
+
+		data = _mm512_i32gather_epi32 (Suff, (void *) InputArr, 4);
+
+	Que quiere decir esto ? 
+
+	  ParR1 hace accesos secuenciales, mientras que Par2 hace accesos esparcidos.
+		Esto en el caso de Ordenamiento DIRECTO de ENTEROS	es conveniente tenerlo separado porque como los datos se mueven, el primer acceso o carga de datos puede ser secuencial mientrsa
+		los demas accesos obligatoriamente deben hacerse con Gather.
+
+	  En nyuestro caso, que el Ordenamiento es POR GRUPO como esto nos afecta. La diferencia radica en que , Nosotros NO movemos los datos, sino solamente los indices .... 
+		Entonces es Selectvalid char quien se encarga de hacer ese gather y generar una salida SECUENCIAL, que por ende puede ser procesada secuencialmente sin problemas NO ameritando versionar 
+		el partial radix en dos partes, sino VERSIONANDO EL SELECTVALID CHAR.
+		
+	LECTURA y Reestructuracion TOTAL DEL SIMD PACK y del SIMD ONLY: TOMAR EN CUENTA
+
+
+Util Juan D
+	Reserva e inicializacion de memoria en zonas paralelas. por ejemplo caso de histograma.
+	Determinar umbral para meter insersort o secuencuial. 
+	
+	Full profile
+
+	
+	
+
+
+
+IV. TLP+SIMD
+
+	(YA)Socket / Memory bandwidth. (cores per socket 22), kmp affinity= compact
+
+
+	(YA)Eliminacion de parametros y variables innecesarias en zonas paralelas. 
+
+	(YA)Introduccion de variables privadas
+
+	Principales razones de mala escalabilidad: desbalanceo del trabajo.
+		- Zonas criticas o bloqueadas. 
+		- Sobre carga por sincronizacion y manejo del paralelismo
+		- Que el problema No sea cache friendly. False sharing, memory bounds, cache contention. Scheduling , comunication, cache coherency
+		- sequential code
+		- idle threads
+		- hardware contention
+
+
+
+
+
+
+
+
+
+
+
+
+I. Secuencial
+	Sale del OpenMP_Only con NT=1
+
+II. OpenMP_Only
+	Juan_David_Task
+
+III. SIMD_only
+	Sale del MIMD_Only con NT=1
+
+
+
+IV. Versiones MIMD:  source /opt/intel/bin/compilervars.sh intel64
+TODAS LAS FUNCIONES Trababajan en intervalo Cerrado, abierto. Pero el arreglo de frontera trabaja en intervalo abierto CERRADO.
+	Por Desarrollar: 
+
+		GroupBuilder (Desarrollar versión secuencial, revisar exhaustivo, y si acaso tendrá versión OPenMP) Pensar en versión pr gurpos.	
+
+		Lector Multifasta version eficiente, es decir, primero una que abra el fasta y lo limpie, conociendo ademas la totalidad de elementos. Luego otra qu esolo lo lea para ganar eficiente.
+			Preguntar a Sebastian si lectura en paralelo tiene sentido.
+		
+		Meter openMpRadixsort para grupoes menores a 17*NT
+
+		Definir bien punteros de inicio de Newsorted array y su longitud en radixmimd, ya que este arreglo puede ser perfectamente local y de tamaña o reducido o grande segun convenga. En el 				ultimo scatter.
+
+		Para hacer las pruebas pensar en la posibilidad de tener un solo archivo con TODAS las invocaciones de las 4 versiones de software, para evitar leer el Input muchas veces, en caso de que esto sea muy lento. Estar atento al tema de input de 8 vs 32 bits-
+
+	New sorted array tambien puede ser local y de dimesion mas chica. Si esto se hace debe quitarse el +Inicio que hay en el scatter de al final de partial radixsort y las posiciones dl memcopy
+
+		
+		
+
+	Desarrolladas y verificadas:
+		Partial Radix [MIMD]	
+		IntializeSuffixes
+		Expand
+		Histogramas
+		Exclusive PrefixSum
+		SelectValidChar
+		memcpy en las posiciones exactas y precisas. 
+		Procesar (Main) (Por Grupos?) [Factibilidad de OPenMP--> For Future]
+
+	No tendran versión MIMD: 	ExPsum. Será Sólo Simd.
+
+	Secuenciales de uso parcial verificados.
+		GenInput. //Solo para desarrollo.
+		
+
+V. Errores conocidos: 
+	
+	
+
+

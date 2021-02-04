@@ -1,0 +1,19 @@
+Probar separadamente ambos Groupbuilder. El nuevo sin duda esta malo.
+Compara rla logica del codigo externo al gbuildr casi que linea pro linea.
+, 
+Ojo : Modificar las interfaces de la nueva funcion del groupbuilder, pues ahora todas son enteros sin signo.  Ademas se debe cuidar mucho la segunda invocacion ya que esta es ahora intergrupo.-
+
+1.- Mover memcopy abajo afuera del si para q se ejecute en ambos casos de orden.  No hace falta porque el ordenamiento es directo
+2.- Cambiar Outchar por Input Exp en la llamada a groupbuiler antes de las itereaciones, aun por comprobar si esto esta bien.
+3.- Subir asignacion de inferior a antes del condicional para que tambien tenga valor en ambos casos del sino
+
+
+YA vrifique 
+
+el packaging,
+
+el versioning, 
+el memcpy, 
+el direct sorting para size 2
+
+

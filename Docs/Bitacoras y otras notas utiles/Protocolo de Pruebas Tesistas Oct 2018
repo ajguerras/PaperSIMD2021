@@ -1,0 +1,93 @@
+I.- PREPARACIÓN DE LAS PRUEBAS
+
+-1.- Lea y asegúrese de entender este protocolo de pruebas antes de llegar a su sesión.
+
+0.- Revise la documentación de github de su aplicación antes de llegar a su sesión. Realice las preguntas necesarias. Si el programa ofrece la opcion de NO conservar el orden de los reads informelo antes de emepezar las pruebas.
+	
+1.- Reinicie el servidor en Centos 7. Antes de reiniciar el servidor, notifíquelo a todos los miembros del grupo. 
+
+	usuario ajguerra, Pasword Zeus : betheman1.
+
+2.- Software: 
+
+	Juan David (Miércoles: ), Software: HARC, Descarga: https://github.com/shubhamchandak94/HARC . 
+		Paper: https://academic.oup.com/bioinformatics/article/34/4/558/4386919
+
+	Camilo : (Jueves: ), Software: Assembltrie , Descarga:https://github.com/kyzhu/assembltrie , 
+		Paper:https://www.nature.com/articles/s41467-017-02480-6 
+
+
+3.- Descargue e instale la aplicacion correspondiente. 
+
+	Registre y documente detalladamente cualquier paso de instalacion adicional o conficuracion especial de la prueba, asi como los comandos usados para comprimir y descomprimir.  Llamelo Bitacora expermentos (Nombre Software) Oct 18.  Informe antes de instalar algun paquete adicional.
+	Si tiene duda con algun parámetro, consúltelo.
+
+4.- Familiaricese con la hoja de reporte de resultados en excel (adjunta).
+
+5.- Ubique el dataset a utilizar, familiaricese con el y su nomenclatura en las hojas de excel. Se les dará en el lab. Ubique cada uno en una carpeta separada para que no se confunda durante las pruebas ya que realizará muchas. Debemos ser muy oranizados para evitar errores, ya que son muchos datos y estamos afectando el trabajo de otros miembros del grupo al hacer uso exclusivo del servidor.
+
+6.- Realice una prueba preliminar con cualquier dato, inspeccione ocularmente los resultados (en tamaño y contenido). 
+
+7.- NO use gedit para visualizar archivos grandes, use glogg.
+
+
+II. DESARROLLO DE LAS PRUEBAS (Data Real)
+
+Las pruebas ser realizarán en dos fases separadas e independientes. Primero las de  la sección (A) y luego las (B)  No deben hacerse simultaneamente. 
+
+	- No lance pruebas en paralelo.
+	- Toda prueba con una precisión de dos decimales, y con tres réplicas por archivo. Si alguna de las replicas se aleja en mas de un 10% del resto de mediciones, debe descartarse y repetirse. Si 		la irregularidad en la medición persiste revise la integridad de la salida y notífiquelo. La menor de las tres mediciones se debe anotar en la casilla definitiva en la parte superior de la hoja 
+	de calculo.
+	- Si cualquiera de las pruebas tarda más de 40 minutos en ejecutarse, notífiquelo antes de continuar para replantear la prueba o reducir la cantidad de réplicas. 
+
+	- El tiempo debe reportarse en la hoja de calculo en el formato = Minutos*60+segundos.
+
+	- Los tamaños en la hoja de calculo deben ir en Megabytes (MB).
+
+	- Verifique que el servidor no este siendo usado por nadie mas en ese momento (comando top).  
+
+	A) Pruebas de velocidad de compresion y capacidad de compresion. (Hoja Speed C&D )
+
+	Las pruebas deben alternarse entre datasets. Es decir las réplicas no se hacen sencuencialmente sobre el mismo dataset. Primera réplica (D1-->D2...->D6) , luego segunda réplica (D1-->D2...->D6) 		y luego tercera réplica (D1-->D2...->D6). Esto aplica para compresión y descompresión.
+
+	Anteponga el comando  ./time previo al comenado requerido para comprimir/descomprimir según cada herramienta.
+
+		1. Ejecute el comando de compresión. Registre el tiempo de compresión y el tamaño del archivo comprimido. Si el programa arroja varios archivos de salidas, sumelos todas. 
+      		La tamaño del archivo comprimido se registra una sola vez, pero verifique ocularmente que es coherente con el tamaño expresado en la fila 2 (SeqOnly).
+
+		2. Ejecute el comando de descompresión. Registre el tiempo de descompresión y verifique ocularmente el tamaño del archivo descomprimido contra el valor en la casilla XX. 
+
+	B) Pruebas de Memoria Pico (informe antes de iniciar para ver como vamos repecto al tiempo disponible para hacerlas): (Hoja PMemory)
+
+	Si se le autoriza lanzar pruebas de memoria en paralelo (dependiendo del consumo del software), hagalo desde directorios y consolas diferentes para evitar reemplazo de la salida.
+	Si la salida es menor o igua la 15 Megabytes notifíquelo. 
+	Note que la aplicación usada borrara los resultados de la pruba anterior, asi que modifique su nombre antes de lanzar la siguiente (carpeta memusug.). 
+		
+	Esta medición ser realiza tanto para compresión como para descompresión.	
+
+		1.- Ejecute: bash ./memusg.sh 1 15 clean ajguerra nombreEjecutable (nombre usuario, nombre del comando ejecutado)
+
+		2.- Ejecute el programa (compresión/descompresión), sin usar el comando time esta vez.
+
+		3.- En la carpeta memusg habrá un archivo, la primera linea del archivo es la memoria pico en MB. Si hay más de un archivo en dicha carpeta notífiquelo.
+
+
+
+	
+
+
+
+	
+
+
+
+	
+		
+
+
+
+
+	
+
+
+
