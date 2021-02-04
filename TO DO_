@@ -1,0 +1,68 @@
+........................For next meeting
+
+PENDIENTE:
+
+ Test again modulo por modulo.Fix It and test it, documentar en detalle los cambios. NEW group builder.
+
+
+Ubicar descargar e instalar divsufsort, cnfigurar hilos: 1, 16, all
+Ubicar y Probar lector de dataset para ada caso segun Juan David, embeber
+
+
+
+Pruebas preliminares: 
+	Divsuf sort vs Simd OPT: 1x16, 16x16, Allx16
+	Evaluar desempeño
+	Determinar si solo el secuencial o el paralelo tambien.
+
+Buscar papers  estructura del paper.
+
+
+Ubicar descargar e instalar otro competidores
+
+
+Descargar el resto de datasets a ser incluidos.
+
+........................Fin next meeting
+
+INTENTAR FUERTEMENTE EL MEMORY SWAPPING
+
+Encontrar ultima version de  SIMD Naive sin NINGUNA OPTIMIZACION.
+
+
+Ubicar version secuencial final 
+Calcular puntos de cruce entre versiones
+
+Determinar orden o consruir modelo de desempeño. 
+
+Aplicar Vtune profiling.
+
+Instalar y configurar github
+
+Leer y consultar notas de desarrollo y bitacora.
+
+
+**********************************************************LONG FUTURE: 
+
+POsiles optimizaciones grupobuilder (Grupal, simd, OpenMP)
+
+Version hibrida simd +  openmp
+Packin 3 o 4
+
+Comparar inter vs intra
+
+Implementar en python verificador por indices, y modificar codigos para qu eimpriman estos indices  solamente.
+
+**************************************************PAPERS 2019
+
+SIMD SAC
+
+OPENMP SAC
+
+HYBRID SAC (SIMD + OMP)
+
+Parallelizing encoding
+
+
+
+
