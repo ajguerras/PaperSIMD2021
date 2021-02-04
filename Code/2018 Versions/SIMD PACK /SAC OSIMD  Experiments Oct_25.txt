@@ -1,0 +1,112 @@
+0 Replica, 103 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:8954.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:5754.
+
+0 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1584.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:2.
+
+0 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:141.
+
+0 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:585.
+
+0 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1766.
+
+0 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:7977.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:2.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:2.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:6528.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:2.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:0.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:0.
+
+0 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:3.
+
+0 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:11.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1153.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:778.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:0.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:6.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:5.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:5.
+
+0 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:82.
+
+0 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:284.
+
+0 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1036.
+
+0 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:4162.
+
+0 Replica, 10167325 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:16577.
+
+0 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:6.
+
+0 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:73.
+
+0 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:250.
+
+0 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1013.
+
+0 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:4224.
+
+0 Replica, 10167325 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:16903.
+
+1 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1.
+
+1 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:80.
+
+1 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:257.
+
+1 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1030.
+
+1 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:4115.
+
+1 Replica, 10167325 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:16219.
+
+2 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1.
+
+2 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:60.
+
+2 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:248.
+
+2 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1015.
+
+2 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:4131.
+
+2 Replica, 10167325 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:16191.
+
+3 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:2.
+
+3 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:63.
+
+3 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:249.
+
+3 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1008.
+
+3 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:4109.
+
+3 Replica, 10167325 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:16135.
+
+4 Replica, 1003 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1.
+
+4 Replica, 41943 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:60.
+
+4 Replica, 167772 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:248.
+
+4 Replica, 671088 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:1016.
+
+4 Replica, 2684354 Sufijos Ordenados,  Milliseconds in MIMD RadixSAC:4156.
+

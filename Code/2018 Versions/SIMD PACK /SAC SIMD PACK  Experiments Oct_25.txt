@@ -1,0 +1,130 @@
+ --------------------New Round of experiments OPT MIMD ONLY----------------------
+
+ --------------------New Round of experiments OPT MIMD ONLY----------------------
+
+0 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:1615.
+
+0 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:6496.
+
+ --------------------New Round of experiments OPT MIMD ONLY----------------------
+
+0 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:485.
+
+0 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2179.
+
+0 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9477.
+
+0 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:37279.
+
+0 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:161003.
+
+0 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:593164.
+
+1 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:481.
+
+1 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2126.
+
+1 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9181.
+
+1 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:37592.
+
+1 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:162366.
+
+1 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:597725.
+
+2 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:486.
+
+2 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2156.
+
+2 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9358.
+
+2 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:39887.
+
+2 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:158859.
+
+2 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:624939.
+
+3 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:482.
+
+3 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2222.
+
+3 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9221.
+
+3 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:39687.
+
+3 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:159922.
+
+3 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:603962.
+
+4 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:484.
+
+4 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2082.
+
+4 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9321.
+
+4 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:40112.
+
+4 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:159264.
+
+ --------------------New Round of experiments OPT MIMD ONLY----------------------
+
+0 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:517.
+
+0 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2217.
+
+0 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9073.
+
+0 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:37504.
+
+0 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:166478.
+
+0 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:589791.
+
+1 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:492.
+
+1 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2137.
+
+1 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9450.
+
+1 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:38978.
+
+1 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:156141.
+
+1 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:612890.
+
+2 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:484.
+
+2 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2136.
+
+2 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9172.
+
+2 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:38707.
+
+2 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:155890.
+
+2 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:610231.
+
+3 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:481.
+
+3 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2140.
+
+3 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9486.
+
+3 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:37573.
+
+3 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:156986.
+
+3 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:613055.
+
+4 Replica, 1048576 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:488.
+
+4 Replica, 4194304 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:2135.
+
+4 Replica, 16777216 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:9450.
+
+4 Replica, 67108864 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:39075.
+
+4 Replica, 268435456 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:156394.
+
+4 Replica, 1016732528 Sufijos Ordenados,  Milliseconds in PACKSIMD RadixSAC:613745.
+
