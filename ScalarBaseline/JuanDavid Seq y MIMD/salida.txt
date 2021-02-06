@@ -1,0 +1,985 @@
+size= 1000000 threads=2
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 2950.608 ms
+Cadena
+Indexes
+size= 1000000 threads=4
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 2173.232 ms
+Cadena
+Indexes
+size= 1000000 threads=8
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 1467.248 ms
+Cadena
+Indexes
+size= 1000000 threads=16
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 1044.097 ms
+Cadena
+Indexes
+size= 1000000 threads=24
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 856.194 ms
+Cadena
+Indexes
+size= 1000000 threads=32
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 743.883 ms
+Cadena
+Indexes
+size= 1000000 threads=48
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 711.979 ms
+Cadena
+Indexes
+size= 1000000 threads=64
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 719.656 ms
+Cadena
+Indexes
+size= 5000000 threads=2
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 39593.830 ms
+Cadena
+Indexes
+size= 5000000 threads=4
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 24545.905 ms
+Cadena
+Indexes
+size= 5000000 threads=8
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 15178.168 ms
+Cadena
+Indexes
+size= 5000000 threads=16
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 10451.128 ms
+Cadena
+Indexes
+size= 5000000 threads=24
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 8619.079 ms
+Cadena
+Indexes
+size= 5000000 threads=32
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 7443.181 ms
+Cadena
+Indexes
+size= 5000000 threads=48
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 6397.483 ms
+Cadena
+Indexes
+size= 5000000 threads=64
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 6310.693 ms
+Cadena
+Indexes
+size= 10000000 threads=2
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 65100.047 ms
+Cadena
+Indexes
+size= 10000000 threads=4
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 36323.307 ms
+Cadena
+Indexes
+size= 10000000 threads=8
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 22802.748 ms
+Cadena
+Indexes
+size= 10000000 threads=16
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 15230.497 ms
+Cadena
+Indexes
+size= 10000000 threads=24
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 12313.418 ms
+Cadena
+Indexes
+size= 10000000 threads=32
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 10608.140 ms
+Cadena
+Indexes
+size= 10000000 threads=48
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 9220.986 ms
+Cadena
+Indexes
+size= 10000000 threads=64
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 8969.370 ms
+Cadena
+Indexes
+size= 50000000 threads=2
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 5258693.852 ms
+Cadena
+Indexes
+size= 50000000 threads=4
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 2868481.348 ms
+Cadena
+Indexes
+size= 50000000 threads=8
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 1711275.189 ms
+Cadena
+Indexes
+size= 50000000 threads=16
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 983180.296 ms
+Cadena
+Indexes
+size= 50000000 threads=24
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 742484.016 ms
+Cadena
+Indexes
+size= 50000000 threads=32
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 659094.683 ms
+Cadena
+Indexes
+size= 50000000 threads=48
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 538924.049 ms
+Cadena
+Indexes
+size= 50000000 threads=64
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 532285.794 ms
+Cadena
+Indexes
+size= 1000000
+Secuencial
+Frontera
+Out
+Hu
+Processing time: 21998.009 ms
+Cadena
+Indexes
+size= 5000000
+Secuencial
+Frontera
+Out
+Hu
+Processing time: 205659.644 ms
+Cadena
+Indexes
+size= 10000000
+Secuencial
+Frontera
+Out
+Hu
+Processing time: 461487.236 ms
+Cadena
+Indexes
+size= 50000000
+Secuencial
+Frontera
+Out
+Hu
+Processing time: 64200106.127 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 1166602.060 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 2248560.192 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 3409818.991 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 6865124.300 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 10427776.173 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 16573218.051 ms
+Cadena
+Indexes
+size= 1000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 27746470.712 ms
+Cadena
+Indexes
+size= 1000000
+size= 5000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 8072576.517 ms
+Cadena
+Indexes
+size= 5000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 17824390.011 ms
+Cadena
+Indexes
+size= 5000000
+Intergrupo
+Frontera
+Out
+Hu
+Processing time: 31601973.693 ms
+Cadena
+Indexes
+size= 5000000
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4669.546 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4985.909 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4687.833 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4827.792 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4542.589 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4775.134 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 5233.868 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 5409.567 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 67401.538 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 66621.628 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 66704.840 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 67381.862 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 67403.475 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 67263.943 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 67715.393 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 67983.214 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 115819.813 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 120009.280 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 125012.511 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 115801.824 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 114778.003 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 115513.690 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 116876.869 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 118827.004 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9449806.333 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9645495.575 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9575317.261 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9530510.563 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9557383.386 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9576142.677 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9620153.772 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 9488718.299 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 28932.242 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 41575.273 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 63696.918 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 126099.430 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 225059.850 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 418112.456 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 779229.710 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 1054532.279 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 391636.348 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 478180.482 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 673409.808 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 1348338.580 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 2400849.639 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 3852792.501 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 7160032.818 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 9494841.594 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 953863.078 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 1104422.088 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 1433886.526 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 2541254.988 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 4359769.136 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 6934060.101 ms
+Cadena
+Indexes
+Intragrupo
+Frontera
+Out
+Hu
+Id
+Processing time: 12168709.355 ms
+Cadena
+Indexes
+size= 1000000 threads=2
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 2657.963 ms
+Cadena
+Indexes
+size= 1000000 threads=4
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 1479.897 ms
+Cadena
+Indexes
+size= 1000000 threads=8
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 922.506 ms
+Cadena
+Indexes
+size= 1000000 threads=16
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 682.290 ms
+Cadena
+Indexes
+size= 1000000 threads=24
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 580.322 ms
+Cadena
+Indexes
+size= 1000000 threads=32
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 550.816 ms
+Cadena
+Indexes
+size= 1000000 threads=48
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 537.799 ms
+Cadena
+Indexes
+size= 1000000 threads=64
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 605.431 ms
+Cadena
+Indexes
+size= 5000000 threads=2
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 7292565.805 ms
+Cadena
+Indexes
+size= 5000000 threads=4
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 3882167.508 ms
+Cadena
+Indexes
+size= 5000000 threads=8
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 2191768.759 ms
+Cadena
+Indexes
+size= 5000000 threads=16
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 1153253.373 ms
+Cadena
+Indexes
+size= 5000000 threads=24
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 869658.434 ms
+Cadena
+Indexes
+size= 5000000 threads=32
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 767414.071 ms
+Cadena
+Indexes
+size= 5000000 threads=48
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 640855.843 ms
+Cadena
+Indexes
+size= 5000000 threads=64
+Inter+Seq
+Frontera
+Out
+Hu
+Processing time: 612014.644 ms
+Cadena
+Indexes
+size= 1000000
+Secuencial
+Frontera
+Out
+Hu
+Processing time: 6822.377 ms
+Cadena
+Indexes
+size= 5000000
+Secuencial
+Frontera
+Out
+Hu
+Processing time: 15564304.330 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4557.694 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4452.317 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4486.645 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4501.349 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4656.225 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4501.655 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4738.774 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 4637.389 ms
+Cadena
+Indexes
+Intra-Seq
+Frontera
+Out
+Hu
+Processing time: 12424430.515 ms
+Cadena
+Indexes

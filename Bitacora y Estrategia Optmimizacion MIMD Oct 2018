@@ -1,0 +1,99 @@
+gcc -fopenmp -o MSC SASorterv5_parallel.c 
+source /opt/intel/vtune_amplifier_2018/amplxe-vars.sh
+
+source /opt/intel/vtune_amplifier_2018/amplxe-vars.sh 
+source /opt/intel/bin/compilervars.sh intel64
+
+Estrategia de Pruebas SAC:  Ver doc adjunto llamado Pruebas script
+
+
+
+Desactivar toda validacion y escritura de archivos.
+
+Validaciones de Correctitud: 
+	a)Secuencial: Hasta 2.000.000 Hecha, por hacer 5Million (Out of disk memory)
+	b) SIMD: Hasta 2.000.000 Hecha.
+	c) OPENMP :  verificar 1 millon y luego 2.
+	d) OpenMP+SIMD. Hasta 2 millones con outbput verification. Hasta 5.000.000 Hecha (verificaciones en software.) .
+
+I. General : 
+   Cargar el cormosoma hg19 qu eesta en la carpeta downloads y eliminar las N y cualquier otra letra. Dejar todo en Mayusculas. Constuir lector multi_fasta. Viene de la libreria MPEG
+         
+
+II. Pendiente SIMD: 
+ 
+	2) En una segunda etapa. Adicionalmente se requiere llevar acabo la gestión de grupos: Fronteras, Historico de Uso, y Tag de grupo; para evitar que se desordene a posteriori.
+	3) Genera pequeño error cuando se pasa de 80 hilos .... SOLVE
+
+
+III. Nuevas Pruebas. FASTQ COMPRESSION
+
+Para cada Software:
+
+1) Descarguelo e instalelo, 
+2) Haga dos pruebas sencillas de compresión descompresión. Verifique ocularmente igualdad entre archivo original y el descomprimido.
+3) Verifique que el servidor no este siendo usado por nadie mas en ese momento.
+4) Realice las pruebas de tasa de compresion, velocidad de compresion y velocidad de descompresion. Comando time ./NombrePrograma
+	Realice tres replicas por cada una. Registrelas todas, y copie en la hoja definitiva la menor de todas.
+	No lance pruebas en paralelo.
+5) Realice las pruebas de memoria. Puede lanzar varias en paralelo pero desde directorios diferentes para que no haya problema con la salida de la medición.
+	Realice dos pruebas (renombre el archivo del salida del memusug antes de que sea borrado). Documente las dos y tome nota de la menor de ellas.
+	bash ./memusg.sh 1 15 clean jdavidq RadixIntOMP (nombre usuario, nombre programa)
+
+
+A) Dataset Real : 
+	SOFTWARE NUEVO :  
+	Juan David (Miercoles: ), Software: HARC, Descarga: https://github.com/shubhamchandak94/HARC . 
+		Paper: https://academic.oup.com/bioinformatics/article/34/4/558/4386919
+
+
+
+
+	Camilo : (Jueves: ), Software: Assembltrie , Descarga:https://github.com/kyzhu/assembltrie , 
+		Paper:https://www.nature.com/articles/s41467-017-02480-6 
+
+	I ) Pruebas de velocidad de compresion y de compresion. Capacidad de compresion: tres pruebas por ambos experimentos (6 x 6 archivos= 36 ejecuciones)   . Se toma la menor de las tres mediciones.
+	Inspeccion ocular posterior a la descompresion .
+
+
+	II): Pruebsa de Memoria Pico: Tres replicas x 6 files == 18 corridas por Sw. Se toma la menor de las tres mediciones. 
+
+	Verificar que no este en uso el server.
+
+
+Protocolo pruebas de desempeño: 
+
+Protocolo pruebas de memoria: 
+		II. Shin (3815)... GANADOR ABSOLUTO
+	Cambiar el usuario , los megabytes (50) y el nombre del proceso requerido (nombre de ejecutable)
+	Poner a correr el script bash ./memusg.sh 1 5 clean jdavidq RadixIntOMP
+	
+	Poner a correr el ejecutable en cuestion.
+	Hay que tener cuidado sobre todo con el tema de clean para que no borre lo anterior entonces ir manualmente renombrado la carpeta memusug.
+	La primera linea del archivo es la memoria pico en MB.
+	
+
+	bash ./memusg.sh 1 15 clean jdavidq RadixIntOMP (nombre usuario, nombre programa)
+
+
+B) Dataset Artificial : NO.
+
+
+	I) Pruebas de capacodad de compresion: 11 casos de coverage + 18 casos de error= 39 casos= 39 ejecuciones.	
+
+       100 ejecuciones, ellos la mitad, yo la mitad.  y ellos la instalacion y bitactoras de documentaicon.
+
+  	Al hacer las mediciones de tiempo revisar el estatus de uso del servidor (top)
+
+
+C) pruebas de Memoria Only: YO
+       Hay dos opciones: 1) O se hace tambien sobre la data artificial con los datos nuevos y el software nuevo,  pero se ignora la medicion del fastq completo restante.
+			 2) O no se hace spbre la data artificial sino sobre los datos de la publicacion original.
+
+
+
+
+
+
+Abrirle cuenta a ambos en zeus
+LAs pruebas d eMEmoria seran utilizando la Vistual MEmory Size
